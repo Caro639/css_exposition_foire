@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Salon du vin</title>
+  </head>
+
+  <body>
+    <!-- menu -->
+    <div class="reseaux">
+      <a href="#">CONTACT</a>
+      <a href="#">BLOG</a>
+      <img
+        class="contact"
+        src="image/contact.svg"
+        alt="contact"
+      />
+      <img
+        class="facebook"
+        src="image/facebook.svg"
+        alt="facebook"
+      />
+    </div>
+
+    <div class="menu">
+      <img
+        class="logo"
+        src="image/logo.png"
+        alt="logo human booster"
+      />
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a
+              href="javascript:void(0)"
+              class="dropbtn"
+              >SALON</a
+            >
+            <div class="dropdown-content">
+              <a href="#">salon 1</a>
+              <a href="#">salon 2</a>
+              <a href="#">salon 3</a>
+              <a href="#">salon 4</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a
+              href="javascript:void(0)"
+              class="dropbtn"
+              >LISTE DES EXPOSANTS</a
+            >
+            <div class="dropdown-content">
+              <a href="#">exposant 1</a>
+              <a href="#">exposant 2</a>
+              <a href="#">exposant 3</a>
+              <a href="#">exposant 4</a>
+              <a href="#">exposant 5</a>
+              <a href="#">exposant 6</a>
+            </div>
+          </li>
+          <li><a href="#">ANIMATIONS</a></li>
+          <li>
+            <a href="#" class="">EXPOSER</a>
+          </li>
+          <li>
+            <a href="#" class="lien_billet"
+              >BILLETTERIE</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="width">
+      <!-- en tete et caroussel fichier js -->
+      <div class="container">
+        <button
+          class="btn"
+          type="button"
+          id="prev"
+        >
+          &lt;
+        </button>
+        <button
+          class="btn"
+          type="button"
+          id="next"
+        >
+          &gt;
+        </button>
+        <ul>
+          <li class="slide">
+            <img
+              src="image/vin_carroussel.jpg"
+              alt="photo de vins"
+            />
+          </li>
+          <li class="slide active">
+            <img
+              src="image/carroussel3.jpg"
+              alt="photo de vins"
+            />
+          </li>
+          <li class="slide">
+            <img
+              src="image/carroussel4.jpg"
+              alt="photo de vins"
+            />
+          </li>
+          <li class="slide">
+            <img
+              src="image/carroussel.jpg"
+              alt="photo de vins"
+            />
+          </li>
+        </ul>
+      </div>
+      <div class="caroussel">
+        <p class="date">
+          <strong
+            >DU 21 &gt; AU 25 FEVRIER 2024</strong
+          >
+        </p>
+        <h1>
+          Salon du vin à<br />
+          Cournon-d'Auvergne
+        </h1>
+        <p class="halle">
+          GRANDES HALL D'AUVERGNE, COURNON
+          D'AUVERGNE
+        </p>
+        <div id="bouton_caroussel">
+          <a href="#" id="salon"
+            >DÉCOUVRIR LE SALON</a
+          >
+          <a href="#" id="bouton_billet"
+            >ACCÉDER A LA BILLETTERIE</a
+          >
+        </div>
+      </div>
+
+      <!-- article rassemblement auvergnat -->
+      <section>
+        <div class="rassemblement">
+          <div>
+            <img
+              class="gauche_un"
+              src="image/photo_gauche.PNG"
+              alt="photo de vins"
+            />
+          </div>
+          <div id="text1">
+            <h4>LE RASSEMBLEMENT AUVERGNAT</h4>
+            <h5>pour les fins palais</h5>
+            <p>
+              Alors que les prochains millésimes
+              se <br />créent dans le secret des
+              caves, les <br />vignerons en
+              profitent pour venir dans <br />le
+              Massif Central à la rencontre des
+              <br />amateurs d'escapades
+              gourmandes.
+            </p>
+            <p id="text2">
+              Depuis plus d'un quart de siècle, le
+              salon du vin de
+              <br />Clermont-Ferrand représente le
+              rendez-vous de <br />début d'année
+              pour les fins palais. Chaque année,
+              <br />ce sont 35 000 visiteurs qui
+              participent à cet <br />événement
+              d'envergure nationale.
+            </p>
+            <a href="#" class="bouton_salon"
+              >DÉCOUVRIR LE SALON</a
+            >
+          </div>
+          <div>
+            <img
+              class="droite_un"
+              src="image/photo_droite.PNG"
+              alt="photo de vins"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- section baniere visiteur exposant pole -->
+      <section>
+        <div class="banniere">
+          <div id="visiteur">
+            <img
+              class="icon_banniere"
+              src="image/icon_bouteille.PNG"
+              alt=""
+            />
+            <h4>35K</h4>
+            <h5>VISITEURS ÉPICURIENS</h5>
+            <p>
+              Chaque année, 35 000 visiteurs<br />affluent
+              dans les larges allées de la
+              <br />Grande Halle d'Auvergne. Ce
+              rendez-vous attire un public
+              désireux de partager des produits
+              authentiques.
+            </p>
+          </div>
+          <div id="exposant">
+            <img
+              class="icon_banniere_2"
+              src="image/icon_terre.PNG"
+              alt=""
+            />
+            <h4>300</h4>
+            <h5>
+              EXPOSANTS DE FRANCE &amp; NAVARRE
+            </h5>
+            <p>
+              En provenance des terroirs
+              <br />emblématiques de France et de
+              <br />Navarre, plus de 300
+              exposants, dont quelques 250
+              viticulteurs, participent à cet
+              événement d"envergure nationale.
+            </p>
+          </div>
+          <div id="pole">
+            <img
+              class="icon_banniere_3"
+              src="image/icon_assiette.PNG"
+              alt=""
+            />
+            <h4>3</h4>
+            <h5>PÔLES Á PARCOURIR</h5>
+            <p>
+              Les meilleurs producteurs de nos
+              terroirs sont<br />
+              regroupés selon leurs<br />
+              &laquo;spécialités&raquo;, qui
+              toutes contribuent à la réputation
+              de savoir vivre de notre pays.
+            </p>
+          </div>
+          <div id="edition">
+            <img
+              class="icon_banniere_4"
+              src="image/icon_nez.PNG"
+              alt=""
+            />
+            <h4>51ème</h4>
+            <h5>ÉDITION DU SALON</h5>
+            <p>
+              Alors que vous soyez vin ou
+              <br />gastronomie, peu importe ! Le
+              salon <br />du vin de
+              Clermont-Ferrand vous <br />permet
+              d'éveiller tous vos sens et ce,
+              <br />en toute convivialité !
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- section un tour de france  -->
+      <section>
+        <h4 id="tour">UN TOUR DE FRANCE</h4>
+        <h5 id="coeur">au coeur des vignobles</h5>
+        <div class="tour_de_france">
+          <div>
+            <img
+              class="photo_gauche2"
+              src="image/photo_gauche_2.PNG"
+              alt="photo foire de cournon"
+            />
+          </div>
+          <div id="bloc_paragraphe">
+            <p id="r">R</p>
+            <p id="premiere_ligne">
+              endez-vous incontournable en
+              Auvergne,
+            </p>
+            <p id="second_paragraphe">
+              le salon du vin de Clermont-Ferrand
+              vous
+            </p>
+            <p id="trois_p">
+              invite à découvrir les produits des
+              régions <br />viticoles de France et
+              à profiter des <br />conseils des
+              producteurs.
+            </p>
+            <p id="tour_p">
+              Le salon met aussi à l'honneur les
+              produits gastronomiques<br />avec
+              une soixantaine d'exposants
+              proposant des produits<br />de
+              bouche. Charcuterie, fromage et
+              autres spécialités<br />locales
+              seront à associer avec vos vins
+              favoris.
+            </p>
+            <a href="#" id="liste_expo"
+              >LISTE DES EXPOSANTS</a
+            >
+            <a href="#" id="icon_liste">
+              <img
+                src="image/icon_liste.PNG"
+                alt=""
+              />RÉSERVER VOTRE STAND</a
+            >
+          </div>
+          <div>
+            <img
+              class="droite2"
+              src="image/photo_droite_2.PNG"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- section le blog et second caroussel -->
+      <section>
+        <h4 id="blog">LE BLOG</h4>
+        <h5 id="titre_ballade">
+          une ballade gourmande ...
+        </h5>
+        <div class="caroussel2">
+          <button
+            class="bouton"
+            type="button"
+            id="avant"
+          >
+            &lt;
+          </button>
+          <button
+            class="bouton"
+            type="button"
+            id="apres"
+          >
+            &gt;
+          </button>
+          <ul>
+            <li class="item">
+              <div class="carte">
+                <img
+                  src="image/verre.PNG"
+                  alt="un verre de vin"
+                />
+                <p>
+                  Comment conserver son vin
+                  après<br />ouverture ?
+                </p>
+                <a href="#">EN SAVOIR PLUS</a>
+              </div>
+            </li>
+            <li class="item active">
+              <div class="carte">
+                <img
+                  src="image/foule.PNG"
+                  alt="photo du salon des vins"
+                />
+                <p>
+                  Les salons du vin, des
+                  évènements<br />vins et
+                  gastronomie et une équipe<br />pour
+                  les organiser
+                </p>
+                <a href="#">EN SAVOIR PLUS</a>
+              </div>
+            </li>
+            <li class="item active">
+              <div class="carte">
+                <img
+                  src="image/bouteille_un.PNG"
+                  alt="photo de bouteilles"
+                />
+                <p>
+                  2018, une année placée sous
+                  le<br />signe du renouveau
+                </p>
+                <a href="#">EN SAVOIR PLUS</a>
+              </div>
+            </li>
+            <li class="item active">
+              <div class="carte">
+                <img
+                  src="image/bouteille_2.PNG"
+                  alt=""
+                />
+                <p>
+                  A la découverte des confréries
+                  des<br />vins
+                </p>
+                <a href="#">EN SAVOIR PLUS</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <a href="#" id="icon_actualite"
+          >TOUTES NOS ACTUALITÉS</a
+        >
+      </section>
+
+      <!-- section newsletter -->
+      <section>
+        <div class="newsletter">
+          <h4>INSCRIPTION Á</h4>
+          <h5>Newsletter</h5>
+          <form method="post">
+            <label for="email" class="mail"
+              >VOTRE ADRESSE E-MAIL
+              <input
+                name="email"
+                type="email"
+                id="email"
+                placeholder="Ex : lorem@lorem.fr"
+              />
+            </label>
+            <button type="submit">
+              S'INSCRIRE
+            </button>
+          </form>
+          <form class="consentement">
+            <input
+              type="checkbox"
+              id="subscribeNews"
+              name="subscribe"
+              value="newsletter"
+            />
+            <label
+              for="subscribeNews"
+              id="subscribe"
+            >
+              Avec votre consentement, votre
+              e-mail est utilisé par la société<br />des
+              vins de France pour recevoir notre
+              newsletter.<br />
+              Pour en savoir plus, consultez
+              notre<a href="#"
+                ><strong>
+                  politique de
+                  confidentialité.</strong
+                ></a
+              >
+            </label>
+          </form>
+        </div>
+      </section>
+
+      <!-- section infos pratiques et tarifs-->
+      <section>
+        <div class="info">
+          <img
+            class="verre"
+            src="image/verre_vin.PNG"
+            alt="photo d'un verre de vin rouge"
+          />
+          <div class="text_info">
+            <h4>INFOS PRATIQUES</h4>
+            <h5>Tarifs du salon</h5>
+            <p>
+              Plus grand rendez-vous de vins<br />et
+              de gastronomie en Auvergne,<br />le
+              salon du vin de Clermont-<br />Ferrand
+              est de retour pour sa<br />51éme
+              édition du 21 au 25 février<br />2024.
+            </p>
+          </div>
+          <img
+            class="tarif_photo"
+            src="image/presentation.PNG"
+            alt=""
+          />
+        </div>
+        <div class="tarif">
+          <table>
+            <tr>
+              <td>
+                <strong class="en_tete"
+                  >Billet adulte plein
+                  tarif</strong
+                ><br />Entrée valable pour 1
+                personne adulte.<span
+                  class="tableau"
+                >
+                  Toute sortie est
+                  définitive.</span
+                >
+              </td>
+              <td class="free">6€</td>
+            </tr>
+            <tr>
+              <td>
+                <strong class="en_tete"
+                  >Billet jeune -18 ans</strong
+                ><br />Moins de 18 ans accompagné
+                d'un adulte muni d'un billet ou<br />
+                d'une invitation.<span
+                  class="tableau"
+                >
+                  Toute sortie est
+                  définitive.</span
+                >
+              </td>
+              <td class="free">GRATUIT</td>
+            </tr>
+            <tr>
+              <td>
+                <strong class="en_tete"
+                  >Invitation avec un code
+                  promo</strong
+                ><br />Entrée gratuite valable
+                pour 1 personne.<span
+                  class="tableau"
+                >
+                  Toute sortie est
+                  définitive.</span
+                >
+              </td>
+              <td class="free">GRATUIT</td>
+            </tr>
+          </table>
+          <a href="#">ACCÉDER A LA BILLETTERIE</a>
+        </div>
+      </section>
+
+      <!-- section map comment venir -->
+      <section>
+        <div class="map">
+          <img
+            src="image/carte.PNG"
+            class="map_carte"
+            alt=""
+          />
+          <div class="info_map">
+            <div class="text_svg">
+              <h4>INFOS PRATIQUES</h4>
+              <h5>Comment venir ?</h5>
+              <img
+                src="image/icon_carte.PNG"
+                alt=""
+              />
+              <p class="map_p">
+                Grande Halle d'Auvergne,<br />Cournon
+                d'Auvergne
+              </p>
+              <img
+                src="image/icon_tel.PNG"
+                alt=""
+              />
+              <p class="map_tel">
+                04 73 17 19 22
+              </p>
+              <p class="map_pdate">
+                <span class="map_date"
+                  >Vendredi 2 Février : </span
+                ><strong> 14h à 20h30</strong
+                ><br /><span class="map_date"
+                  >Samedi 3 Février : </span
+                ><strong> 10h à 20h30</strong
+                ><br /><span class="map_date"
+                  >Dimanche 4 février :</span
+                >
+                <strong>de 10h à 19h30</strong
+                ><br /><span class="map_date"
+                  >Lundi 5 Février :
+                </span>
+                <strong>de 10h à 16h</strong>
+              </p>
+              <a href="#" class="bouton_salon"
+                >PLAN DU SALON</a
+              >
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="120"
+                y="15"
+                width="500"
+                height="500"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <a href="#">mentions légales</a>
+      <a href="#">politique de confidentialité</a>
+      <a href="#">paramétre des cookies</a>
+      <a href="#">faq</a>
+      <a href="#">espace téléchargement</a>
+      <a href="#" id="coqpit"
+        >Site web réalisé par Coqpit Agence de
+        Communication</a
+      >
+    </footer>
+
+    <!-- fichier js pour le caroussel -->
+    <script src="./index.js"></script>
+  </body>
+</html>
